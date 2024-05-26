@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentPlayer = "X";
     const gameState = Array(9).fill("");
 
+    selectPlayers.addEventListener("change", (e) => {
+        resetGame();
+    });
+
     const winningConditions = [
         [0, 1, 2],
         [3, 4, 5],
@@ -52,8 +56,19 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const changeTurn = () => {
+
         currentPlayer = currentPlayer === "X" ? "O" : "X";
         document.getElementById("currentTurn").innerHTML = getValue("capital")
+        let availableCells = [];
+        gameState.forEach((cell, index) => {
+            if (cell === "") availableCells.push(index);
+        });
+        if (availableCells.length === 0) {
+            document.getElementById("turn-text").innerText = "DRAW!";
+            cells.forEach(cell => cell.removeEventListener("click", handleClick));
+            document.getElementById("currentTurn").innerHTML = "";
+            cells.forEach(cell => cell.classList.add("draw"));
+        }
     };
 
     const getValue = (css) => {
@@ -110,6 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
             cell.innerHTML = "";
             cell.classList.remove("win");
             cell.addEventListener("click", handleClick);
+            cell.classList.remove("draw");
         });
     };
 

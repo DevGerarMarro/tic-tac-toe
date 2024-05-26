@@ -33,6 +33,11 @@
     color: white !important;
 }
 
+.draw{
+    background-color: blue;
+    color: white !important;
+}
+
 .x {
     color: #ffff;
 }

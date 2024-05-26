@@ -71,9 +71,9 @@ button {
 @media only screen and (max-width: 550px) {
     .game-settings-container{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-    
+        width: 100%;
     }
 
     .game-settings-container h1 {
@@ -83,4 +83,21 @@ button {
     #players-count{
         width: 100px;
     }
+
+    #currentTurn{
+        margin-top: 10px;
+        border: solid 2px #612a0e;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .capital {
+        font-size: 25px;
+        margin-bottom: 0px;
+        font-weight: bold;
+    }
+
 }

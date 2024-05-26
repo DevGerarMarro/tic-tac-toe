@@ -30,3 +30,14 @@ ul li a{
     color: #FFFF;
     width: 10%;
 }
+
+@media only screen and (max-width: 550px) {
+    #footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #copyright{
+        width: 100%;
+    }
+}
