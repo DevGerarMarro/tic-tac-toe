@@ -1,0 +1,86 @@
+.game-settings-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.game-settings-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#players-count{
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.turn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.capital {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#currentTurn{
+    margin-top: 10px;
+    border: solid 2px #612a0e;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #612a0e;
+    color: var(--text-color);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+    .game-settings-container{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+
+    .game-settings-container h1 {
+        display: none;
+    }
+
+    #players-count{
+        width: 100px;
+    }
+}

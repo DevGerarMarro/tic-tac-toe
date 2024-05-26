@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tic Tac Toe</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+	<link href='/assets/styles/global.css' rel='stylesheet'>
+	<link href='/assets/styles/gameBoard.css' rel='stylesheet'>
+	<link href='/assets/styles/gameSettings.css' rel='stylesheet'>
+	<link href='/assets/styles/footer.css' rel='stylesheet'>
+	<link rel="shortcut icon" href="/assets/images/tic-tac-toe.png" type="image/png">
+</head>
+
+<body>
+	<main>
+		<div id="game-board">
+			<div class="grid-container">
+				<div id="0" class="cell"></div>
+				<div id="1" class="cell"></div>
+				<div id="2" class="cell"></div>
+
+				<div id="3" class="cell"></div>
+				<div id="4" class="cell"></div>
+				<div id="5" class="cell"></div>
+
+				<div id="6" class="cell"></div>
+				<div id="7" class="cell"></div>
+				<div id="8" class="cell"></div>
+
+			</div>
+		</div>
+
+		<div id="game-settings">
+			<div class="game-settings-container">
+				<h1>Tic Tac Toe - Play to win!</h1>
+
+				<select name="players" id="players-count">
+					<option value="1">1 Player</option>
+					<option value="2">2 Players</option>
+				</select>
+
+				<div class="turn-container">
+					<span id="turn-text">Current turn</span>
+
+					<div id="currentTurn">
+						
+					</div>
+				</div>
+
+				<button id="reset">Reset Game</button>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div id="footer-container">
+				<ul>
+					<li>
+						<img src="assets/images/github.png" alt="github" width="25" />
+						<a href="https://github.com/GerarMarros" target="_blank">GerarMarros</a>
+					</li>
+					<li>
+						<img src="assets/images/linkedin.png" alt="linkedin" width="25" />
+						<a href="https://www.linkedin.com/in/gerardo-marroquin" target="_blank">gerardo-marroquin</a>
+					</li>
+					<li>
+						<img src="assets/images/email.png" alt="email" width="25" />
+						<a href="mailto:dev.gerarmarro@gmail.com">dev.gerarmarro@gmail.com</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div id="copyright">
+				<p id="copyright-text">© 2022 - GerarMarros</p>
+			</div>
+		</div>
+	</main>
+	<script defer type="text/javascript" src="/assets/scripts/main.js"></script>
+</body>
+
+</html>

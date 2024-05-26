@@ -1,0 +1,42 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-gap: 1px;
+}
+
+.cell {
+    background-color: var(--cell-bg-color);
+    border: solid 1px #0000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: var(--main-radius);
+}
+
+.cell span {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.cell:hover {
+    background-color: var(--cell-bg-color-hover);
+    box-shadow: 0 0 10px var(--cell-bs-color-hover);
+}
+
+.win{
+    background-color: red;
+    color: white !important;
+}
+
+.x {
+    color: #ffff;
+}
+
+.o {
+    color: #ffff;
+}
