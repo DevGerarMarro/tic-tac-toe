@@ -8,8 +8,6 @@ This project implements the classic Tic-Tac-Toe game using HTML, CSS, and JavaSc
 
 ## Features (Características)
 
-![](./public/images/interfaz.png)
-
 **Interactive User Interface**:
 
 1. **Board**: A 3x3 grid board where players can click on cells to make their moves.
@@ -46,6 +44,8 @@ git clone https://github.com/DevGerarMarro/tic-tac-toe.git
 
 # Screenshots (Capturas de pantalla)
 
-![](./public/images/winner.png)
+![](./public/images/interfaz.png)
 
 ![](./public/images/draw.png)
+
+![](./public/images/winner.png)
